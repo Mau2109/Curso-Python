@@ -1657,6 +1657,8 @@ def jugar_ronda():
             if pistas_usadas <= len(palabras_db[palabra]):
                 mostrar_pistas(palabra, pistas_usadas)
 ```
+---
+
 # 📚 Módulo 4: Funciones en Python
 
 > **Organiza y Reutiliza tu Código**
