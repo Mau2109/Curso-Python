@@ -2607,142 +2607,270 @@ ZeroDivisionError	División por cero	Verifica que el divisor no sea cero
 
     Usar strip() al leer líneas: elimina espacios y saltos de línea
 
-📁 Módulo 6: Métodos Integrados en Python para Productividad
+🧠 Módulo 6: Métodos Integrados en Python
 
-    Haz más con menos código. Aprende a usar métodos integrados que simplifican tu programación.
+En este módulo aprenderás a utilizar los métodos integrados más comunes en Python para cadenas de texto (strings), listas, diccionarios y otros tipos de datos. Dominar estos métodos te hará mucho más productivo y te permitirá escribir código más limpio y eficiente.
+📌 Tabla de Contenido
 
-Este módulo cubre los métodos más útiles de cadenas (str), listas (list) y diccionarios (dict) con ejemplos prácticos y comentados. Te ayudarán a trabajar más rápido y con código más limpio.
-📖 Tabla de Contenidos
+    Métodos para Strings
 
-    🔤 Métodos de Cadenas (str)
+    Métodos para Listas
 
-    📋 Métodos de Listas (list)
+    Métodos para Diccionarios
 
-    🗂️ Métodos de Diccionarios (dict)
+    Otros Métodos Útiles
 
-    💻 Ejercicios Prácticos
+1️⃣ Métodos para Strings
 
-    📝 Conceptos Clave
+# upper() - Convierte todos los caracteres a mayúsculas
+texto = "hola mundo"
+print(texto.upper())  # "HOLA MUNDO"
 
-    ✅ Buenas Prácticas
+# lower() - Convierte todos los caracteres a minúsculas
+print("PYTHON".lower())  # "python"
 
-🔤 Métodos de Cadenas (str)
+# capitalize() - Capitaliza la primera letra
+print("python".capitalize())  # "Python"
 
-texto = "  Hola Mundo  "
+# title() - Capitaliza la primera letra de cada palabra
+print("hola mundo".title())  # "Hola Mundo"
 
-Método	Descripción	Ejemplo	Resultado
-upper()	Convierte a mayúsculas	texto.upper()	' HOLA MUNDO '
-lower()	Convierte a minúsculas	texto.lower()	' hola mundo '
-strip()	Elimina espacios extremos	texto.strip()	'Hola Mundo'
-replace()	Reemplaza una subcadena	texto.replace("Mundo", "Python")	' Hola Python '
-split()	Divide en lista	"Hola mundo".split()	['Hola', 'mundo']
-join()	Une elementos	" ".join(['Hola', 'mundo'])	'Hola mundo'
-✅ Ejemplos
+# strip() - Elimina espacios en blanco al inicio y final
+print("   espacio   ".strip())  # "espacio"
 
-mensaje = "  Aprende Python rápido  "
+# replace() - Reemplaza subcadenas
+print("hola mundo".replace("mundo", "Python"))  # "hola Python"
 
-print(mensaje.strip())           # Quita espacios → 'Aprende Python rápido'
-print(mensaje.upper())           # MAYÚSCULAS → '  APRENDE PYTHON RÁPIDO  '
-print(mensaje.replace("Python", "Java"))  # Reemplaza texto
-print(mensaje.strip().split())  # Divide en lista de palabras
+# split() - Divide la cadena en una lista
+print("uno,dos,tres".split(","))  # ["uno", "dos", "tres"]
 
-📋 Métodos de Listas (list)
+# join() - Une elementos de una lista en una cadena
+palabras = ["Hola", "mundo"]
+print(" ".join(palabras))  # "Hola mundo"
 
-numeros = [4, 2, 7, 1]
+# find() - Devuelve el índice de la primera ocurrencia
+print("banana".find("na"))  # 2
 
-Método	Descripción	Ejemplo	Resultado
-append(x)	Agrega al final	numeros.append(5)	[4, 2, 7, 1, 5]
-insert(i, x)	Inserta en posición	numeros.insert(1, 9)	[4, 9, 2, 7, 1]
-remove(x)	Elimina primera ocurrencia	numeros.remove(2)	[4, 7, 1]
-sort()	Ordena ascendentemente	numeros.sort()	[1, 2, 4, 7]
-pop()	Quita y devuelve último	numeros.pop()	1
-count(x)	Cuenta ocurrencias	numeros.count(7)	1
-✅ Ejemplos
+# count() - Cuenta cuántas veces aparece una subcadena
+print("banana".count("na"))  # 2
 
-frutas = ["manzana", "plátano", "uva"]
-frutas.append("naranja")
-print(frutas)  # ['manzana', 'plátano', 'uva', 'naranja']
+2️⃣ Métodos para Listas
 
-numeros = [3, 1, 4, 1, 5]
-print(numeros.count(1))  # 2
+numeros = [1, 2, 3, 4, 5]
+
+# append() - Agrega un elemento al final
+numeros.append(6)
+print(numeros)  # [1, 2, 3, 4, 5, 6]
+
+# insert() - Inserta en un índice específico
+numeros.insert(0, 0)
+print(numeros)  # [0, 1, 2, 3, 4, 5, 6]
+
+# remove() - Elimina la primera ocurrencia
+numeros.remove(3)
+print(numeros)  # [0, 1, 2, 4, 5, 6]
+
+# pop() - Elimina y devuelve el último elemento
+ultimo = numeros.pop()
+print(ultimo)  # 6
+print(numeros)
+
+# sort() - Ordena la lista
 numeros.sort()
-print(numeros)  # [1, 1, 3, 4, 5]
+print(numeros)  # [0, 1, 2, 4, 5]
 
-🗂️ Métodos de Diccionarios (dict)
+# reverse() - Invierte el orden
+numeros.reverse()
+print(numeros)  # [5, 4, 2, 1, 0]
 
-persona = {"nombre": "Ana", "edad": 30}
+# count() - Cuenta las veces que aparece un valor
+print(numeros.count(4))  # 1
 
-Método	Descripción	Ejemplo	Resultado
-get(k)	Devuelve valor o None	persona.get("nombre")	"Ana"
-update()	Actualiza/añade clave-valor	persona.update({"ciudad": "CDMX"})	{'nombre': 'Ana', 'edad': 30, 'ciudad': 'CDMX'}
-pop(k)	Elimina clave y devuelve valor	persona.pop("edad")	30
-keys()	Retorna claves	persona.keys()	dict_keys(['nombre', 'edad'])
-values()	Retorna valores	persona.values()	dict_values(['Ana', 30])
-✅ Ejemplos
+# index() - Devuelve el índice del primer valor encontrado
+print(numeros.index(2))  # 2
 
-usuario = {"usuario": "admin", "activo": True}
+3️⃣ Métodos para Diccionarios
 
-print(usuario.get("usuario"))  # 'admin'
-usuario.update({"rol": "superuser"})
-print(usuario)  # {'usuario': 'admin', 'activo': True, 'rol': 'superuser'}
-print("activo" in usuario)  # True
+persona = {"nombre": "Juan", "edad": 30}
 
-💻 Ejercicios Prácticos
-Ejercicio 1: Formato de nombre
+# get() - Obtiene un valor de forma segura
+print(persona.get("nombre"))  # Juan
+print(persona.get("altura", "No disponible"))  # No disponible
 
-Nivel: 🟢 Principiante
-Solicita el nombre completo y muéstralo en mayúsculas, sin espacios al inicio/fin.
-<details> <summary>👁️ Ver solución</summary>
+# keys() - Devuelve las llaves
+print(persona.keys())  # dict_keys(['nombre', 'edad'])
 
-nombre = input("Escribe tu nombre completo: ")
-print(nombre.strip().upper())
+# values() - Devuelve los valores
+print(persona.values())  # dict_values(['Juan', 30])
 
-</details>
-Ejercicio 2: Lista de compras
+# items() - Devuelve pares (llave, valor)
+for clave, valor in persona.items():
+    print(f"{clave}: {valor}")
 
-Nivel: 🟢 Principiante
-Permite ingresar productos separados por comas y ordénalos.
-<details> <summary>👁️ Ver solución</summary>
+# update() - Agrega o actualiza claves
+persona.update({"edad": 31, "altura": 1.75})
+print(persona)
 
-entrada = input("Productos (separados por coma): ")
-productos = entrada.split(",")
-productos = [p.strip().capitalize() for p in productos]
-productos.sort()
+# pop() - Elimina una clave y devuelve su valor
+edad = persona.pop("edad")
+print(edad)  # 31
+print(persona)
 
-print("Lista ordenada:", productos)
+4️⃣ Otros Métodos Útiles
 
-</details>
-Ejercicio 3: Diccionario de usuario
+# len() - Devuelve la longitud de una colección
+print(len("Python"))  # 6
+print(len([1, 2, 3]))  # 3
 
-Nivel: 🟡 Intermedio
-Guarda datos personales en un diccionario y actualiza la ciudad.
-<details> <summary>👁️ Ver solución</summary>
+# type() - Devuelve el tipo de un dato
+print(type(42))  # <class 'int'>
+print(type([1, 2, 3]))  # <class 'list'>
 
-usuario = {}
-usuario["nombre"] = input("Nombre: ")
-usuario["edad"] = int(input("Edad: "))
-usuario["correo"] = input("Correo: ")
+# isinstance() - Verifica si un objeto es de cierto tipo
+print(isinstance(3.14, float))  # True
 
-usuario.update({"ciudad": "CDMX"})
-print("Datos del usuario:")
-for clave, valor in usuario.items():
-    print(f"{clave.capitalize()}: {valor}")
+# enumerate() - Devuelve índice y valor
+for i, letra in enumerate("hola"):
+    print(i, letra)
 
-</details>
-📝 Conceptos Clave para Recordar
-Tipo	Método	Qué hace
-str	upper(), strip(), replace()	Manipula texto
-list	append(), sort(), count()	Organiza elementos
-dict	get(), update(), items()	Accede y modifica datos clave-valor
-✅ Buenas Prácticas
+# zip() - Une dos listas en pares
+nombres = ["Ana", "Luis"]
+edades = [25, 30]
+print(list(zip(nombres, edades)))  # [('Ana', 25), ('Luis', 30)]
 
-    🧠 Memoriza los métodos más usados por tipo de dato
+🧪 Ejercicio Práctico
 
-    🧹 Usa strip() para limpiar entrada del usuario
+# Crea una función que reciba una lista de nombres,
+# elimine los espacios, los capitalice y los ordene.
 
-    🔍 Usa get() en diccionarios para evitar errores si no existe la clave
+def limpiar_y_ordenar(nombres):
+    return sorted([nombre.strip().capitalize() for nombre in nombres])
 
-    🧩 Combina .split() y .join() para transformar texto rápidamente
+# Prueba:
+nombres_crudos = ["  pedro", "ana  ", "LUIS"]
+print(limpiar_y_ordenar(nombres_crudos))
+# Resultado: ['Ana', 'Luis', 'Pedro']
 
-    📝 Usa comprensión de listas ([x for x in lista]) junto con métodos
+# 📚 Módulo 6: Métodos Integrados en Python
+
+> **Productividad y Buenas Prácticas con Tipos de Datos Comunes**
+>
+> En este módulo explorarás los métodos más utilizados para manipular cadenas de texto, listas, diccionarios y otros tipos de datos en Python. Aprenderlos te hará escribir código más limpio, corto y eficiente.
+
+## 📖 Tabla de Contenidos
+
+1. [🔢 Métodos para Strings](#-métodos-para-strings)
+2. [📃 Métodos para Listas](#-métodos-para-listas)
+3. [🔐 Métodos para Diccionarios](#-métodos-para-diccionarios)
+4. [🔄 Otros Métodos Útiles](#-otros-métodos-útiles)
+5. [💻 Ejercicio Práctico](#-ejercicio-práctico)
+6. [📅 Conceptos Clave](#-conceptos-clave)
+7. [⚠️ Errores Comunes](#⚠️-errores-comunes)
+
+---
+
+## 🔢 Métodos para Strings
+
+```python
+texto = "hola mundo"
+
+print(texto.upper())       # HOLA MUNDO
+print(texto.lower())       # hola mundo
+print(texto.capitalize())  # Hola mundo
+print(texto.title())       # Hola Mundo
+print("  hola  ".strip())  # hola
+print(texto.replace("mundo", "Python"))  # hola Python
+print("uno,dos,tres".split(","))  # ['uno', 'dos', 'tres']
+
+palabras = ["Hola", "mundo"]
+print(" ".join(palabras))  # Hola mundo
+print("banana".find("na"))  # 2
+print("banana".count("na")) # 2
+```
+
+---
+
+## 📃 Métodos para Listas
+
+```python
+numeros = [1, 2, 3, 4, 5]
+
+numeros.append(6)          # Agrega al final
+numeros.insert(0, 0)       # Inserta en la posición 0
+numeros.remove(3)          # Elimina el primer 3
+ultimo = numeros.pop()     # Quita el último y lo guarda
+numeros.sort()             # Ordena de menor a mayor
+numeros.reverse()          # Invierte el orden
+
+print(numeros.count(2))    # Cuenta ocurrencias de 2
+print(numeros.index(4))    # Posición de 4
+```
+
+---
+
+## 🔐 Métodos para Diccionarios
+
+```python
+persona = {"nombre": "Juan", "edad": 30}
+
+print(persona.get("nombre"))  # Juan
+print(persona.get("altura", "No disponible"))
+print(persona.keys())         # dict_keys(['nombre', 'edad'])
+print(persona.values())       # dict_values(['Juan', 30])
+print(persona.items())        # dict_items([('nombre', 'Juan'), ('edad', 30)])
+
+persona.update({"edad": 31, "altura": 1.75})
+edad = persona.pop("edad")
+```
+
+---
+
+## 🔄 Otros Métodos Útiles
+
+```python
+print(len("Python"))         # Longitud
+print(type([1, 2]))           # Tipo
+print(isinstance(3.14, float)) # Verifica tipo
+
+for i, letra in enumerate("hola"):
+    print(i, letra)
+
+nombres = ["Ana", "Luis"]
+edades = [25, 30]
+print(list(zip(nombres, edades)))
+```
+
+---
+
+## 💻 Ejercicio Práctico
+
+```python
+def limpiar_y_ordenar(nombres):
+    """Limpia espacios, capitaliza y ordena nombres"""
+    return sorted([nombre.strip().capitalize() for nombre in nombres])
+
+nombres_crudos = ["  pedro", "ana  ", "LUIS"]
+print(limpiar_y_ordenar(nombres_crudos))
+# ['Ana', 'Luis', 'Pedro']
+```
+
+---
+
+## 📅 Conceptos Clave
+
+* Los **métodos integrados** te permiten manipular objetos de forma eficiente sin importar su tipo (str, list, dict, etc).
+* Aprende la diferencia entre `append()` y `insert()`, `get()` y acceso directo a claves.
+* `join()` y `split()` son métodos poderosos para trabajar con texto.
+
+---
+
+## ⚠️ Errores Comunes
+
+* Usar `replace()` en listas (solo es válido en strings).
+* Olvidar que `pop()` modifica la lista original.
+* Acceder a claves inexistentes sin usar `get()`.
+
+---
+
+
 
