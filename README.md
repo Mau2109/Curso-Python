@@ -28,4 +28,4 @@ La idea es que aprendas Python… o por lo menos te rías lo suficiente como par
 
 ---
 
-💡 *Disclaratoria*: No me hago responsable si después de este curso terminas hablando con tu computadora o diciéndole "pythoncito" de cariño.
+💡 *NOTA*: No me hago responsable si después de este curso terminas hablando con tu computadora o diciéndole "pythoncito" de cariño.

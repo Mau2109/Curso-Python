@@ -70,7 +70,7 @@ print("Hola mundo desde Python 🐍")
 
 ```
 y ejecuta el archivo.
-Genial ahora puedes hackear y hacer todo lo que quieras, naa mentira ahoar si vamos a lo bueno vamos al primer modulo.
+Genial ahora puedes hackear y hacer todo lo que quieras, no mentira ahora si vamos a lo bueno vamos al primer modulo.
 
 [Siguiente módulo](../modulo1/README.md)
 

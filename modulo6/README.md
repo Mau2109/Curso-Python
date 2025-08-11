@@ -6,17 +6,17 @@
 
 ## 📖 Tabla de Contenidos
 
-1. [🔢 Métodos para Strings](#-métodos-para-strings)
-2. [📃 Métodos para Listas](#-métodos-para-listas)
-3. [🔐 Métodos para Diccionarios](#-métodos-para-diccionarios)
-4. [🔄 Otros Métodos Útiles](#-otros-métodos-útiles)
-5. [💻 Ejercicio Práctico](#-ejercicio-práctico)
-6. [📅 Conceptos Clave](#-conceptos-clave)
-7. [⚠️ Errores Comunes](#⚠️-errores-comunes)
+1. [Métodos para Strings](#-métodos-para-strings)
+2. [Métodos para Listas](#-métodos-para-listas)
+3. [Métodos para Diccionarios](#-métodos-para-diccionarios)
+4. [Otros Métodos Útiles](#-otros-métodos-útiles)
+5. [Ejercicio Práctico](#-ejercicio-práctico)
+6. [Conceptos Clave](#-conceptos-clave)
+7. [Errores Comunes](#-errores-comunes)
 
 ---
 
-## 🔢 Métodos para Strings
+## Métodos para Strings
 
 ```python
 texto = "hola mundo"
@@ -37,7 +37,7 @@ print("banana".count("na")) # 2
 
 ---
 
-## 📃 Métodos para Listas
+## Métodos para Listas
 
 ```python
 numeros = [1, 2, 3, 4, 5]
@@ -55,7 +55,7 @@ print(numeros.index(4))    # Posición de 4
 
 ---
 
-## 🔐 Métodos para Diccionarios
+## Métodos para Diccionarios
 
 ```python
 persona = {"nombre": "Juan", "edad": 30}
@@ -72,7 +72,7 @@ edad = persona.pop("edad")
 
 ---
 
-## 🔄 Otros Métodos Útiles
+## Otros Métodos Útiles
 
 ```python
 print(len("Python"))         # Longitud
@@ -89,7 +89,7 @@ print(list(zip(nombres, edades)))
 
 ---
 
-## 💻 Ejercicio Práctico
+## Ejercicio Práctico
 
 ```python
 def limpiar_y_ordenar(nombres):
@@ -103,7 +103,7 @@ print(limpiar_y_ordenar(nombres_crudos))
 
 ---
 
-## 📅 Conceptos Clave
+## Conceptos Clave
 
 * Los **métodos integrados** te permiten manipular objetos de forma eficiente sin importar su tipo (str, list, dict, etc).
 * Aprende la diferencia entre `append()` y `insert()`, `get()` y acceso directo a claves.
@@ -111,10 +111,12 @@ print(limpiar_y_ordenar(nombres_crudos))
 
 ---
 
-## ⚠️ Errores Comunes
+## Errores Comunes
 
 * Usar `replace()` en listas (solo es válido en strings).
 * Olvidar que `pop()` modifica la lista original.
 * Acceder a claves inexistentes sin usar `get()`.
 
 ---
+
+[Siguiente módulo](../modulo7/README.md)
