@@ -57,5 +57,19 @@ python3 --version
 4. Thonny: Perfecta para principiantes (Es simple de usar).
 5. Notas: Ya si eres un macho peludo, lomo plateado pues escribe el codigo en cualquier editor de texto y luego ejecutalo directamente en terminal. (Por salud mental mejor no lo hagas).
 
+## Mi primer Hola Mundo!
+
+Crea una archivo con cualquier nombre pero guardalo con la extension **.py** .
+Ejemplo: hola.py
+
+Copia lo siguiente y pegalo dentro de ese archivo.
+
+```python
+#Hola mundo
+print("Hola mundo desde Python 🐍")
+
+```
+y ejecuta el archivo.
+Genial ahora puedes hackear y hacer todo lo que quieras, naa mentira ahoar si vamos a lo bueno vamos al primer modulo.
 
 

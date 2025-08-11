@@ -6,17 +6,17 @@
 
 ## 📖 Tabla de Contenidos
 
-1. [🔤 Variables en Python](#-variables-en-python)
-2. [📊 Tipos de Datos Básicos](#-tipos-de-datos-básicos)
-3. [⚡ Operadores Básicos](#-operadores-básicos)
-4. [📝 Entrada y Salida de Datos](#-entrada-y-salida-de-datos)
-5. [💻 Ejercicios Prácticos](#-ejercicios-prácticos)
-6. [📝 Conceptos Clave](#-conceptos-clave-para-recordar)
-7. [⚠️ Errores Comunes](#️-errores-comunes)
+1. [Variables en Python](#-variables-en-python)
+2. [Tipos de Datos Básicos](#-tipos-de-datos-básicos)
+3. [Operadores Básicos](#-operadores-básicos)
+4. [Entrada y Salida de Datos](#-entrada-y-salida-de-datos)
+5. [Ejercicios Prácticos](#-ejercicios-prácticos)
+6. [Conceptos Clave](#-conceptos-clave-para-recordar)
+7. [Errores Comunes](#-errores-comunes)
 
 ---
 
-## 🔤 Variables en Python
+##  Variables en Python
 
 Una variable es un contenedor que almacena datos. En Python, no necesitas declarar el tipo de variable, el intérprete lo deduce automáticamente.
 
@@ -42,11 +42,11 @@ print(es_estudiante) # True
 
 ---
 
-## 📊 Tipos de Datos Básicos
+## Tipos de Datos Básicos
 
 Python tiene varios tipos de datos fundamentales:
 
-### 🔢 Números (int y float)
+### Números (int y float)
 ```python
 # Números enteros (int)
 numero_entero = 42
@@ -61,7 +61,7 @@ print(type(numero_entero))  # <class 'int'>
 print(type(precio))         # <class 'float'>
 ```
 
-### 📝 Cadenas de texto (str)
+### Cadenas de texto (str)
 ```python
 # Diferentes formas de crear strings
 nombre = "María"
@@ -80,7 +80,7 @@ print(apellido.lower())    # gonzález
 print(len(nombre))         # 5
 ```
 
-### ✅❌ Booleanos (bool)
+### Booleanos (bool)
 ```python
 verdadero = True
 falso = False
@@ -94,7 +94,7 @@ print(mayor_de_edad)  # True (si edad es 25)
 
 ## ⚡ Operadores Básicos
 
-### 🔢 Operadores Aritméticos
+### Operadores Aritméticos
 ```python
 a = 10
 b = 3
@@ -108,7 +108,7 @@ modulo = a % b      # 1 (resto de la división)
 potencia = a ** b   # 1000 (10 elevado a la 3)
 ```
 
-### 📊 Operadores de Comparación
+### Operadores de Comparación
 ```python
 x = 5
 y = 8
@@ -135,9 +135,9 @@ print(not b)    # True
 
 ---
 
-## 📝 Entrada y Salida de Datos
+## Entrada y Salida de Datos
 
-### 🖨️ Función print()
+### Función print()
 ```python
 # Imprimir texto
 print("Hola mundo")
@@ -156,7 +156,7 @@ print("Línea 1", end=" | ")
 print("Línea 2")  # Línea 1 | Línea 2
 ```
 
-### ⌨️ Función input()
+###  Función input()
 ```python
 # Obtener entrada del usuario
 nombre_usuario = input("¿Cuál es tu nombre? ")
@@ -172,10 +172,10 @@ edad = int(input("¿Cuántos años tienes? "))
 
 ---
 
-## 💻 Ejercicios Prácticos
+## Ejercicios Prácticos
 
 ### Ejercicio 1: Variables Básicas
-**Nivel:** 🟢 Principiante
+**Nivel:** Principiante
 
 Crea un programa que:
 1. Defina variables para tu nombre, edad y ciudad
@@ -194,7 +194,7 @@ print(f"Hola, mi nombre es {nombre}, tengo {edad} años y vivo en {ciudad}")
 </details>
 
 ### Ejercicio 2: Calculadora Básica
-**Nivel:** 🟢 Principiante
+**Nivel:** Principiante
 
 Crea un programa que pida dos números al usuario y muestre todas las operaciones aritméticas básicas.
 
@@ -213,7 +213,7 @@ print(f"División: {num1} / {num2} = {num1 / num2}")
 </details>
 
 ### Ejercicio 3: Información Personal
-**Nivel:** 🟡 Intermedio
+**Nivel:** Intermedio
 
 Crea un programa que pida información personal al usuario y calcule su año de nacimiento.
 
@@ -237,7 +237,7 @@ print(f"Año de nacimiento aproximado: {año_nacimiento}")
 </details>
 
 ### Ejercicio 4: Validación de Tipos
-**Nivel:** 🟡 Intermedio
+**Nivel:** Intermedio
 
 Crea un programa que muestre el tipo de dato de diferentes variables.
 
@@ -264,7 +264,7 @@ print(f"'{numero_como_texto}' convertido a entero: {numero_convertido}")
 </details>
 
 ### Ejercicio 5: Operaciones con Strings
-**Nivel:** 🟡 Intermedio
+**Nivel:** Intermedio
 
 Crea un programa que manipule cadenas de texto.
 
@@ -305,10 +305,10 @@ print(f"Última letra: {frase[-1] if frase else 'No hay caracteres'}")
 
 | Error | Descripción | Solución |
 |-------|-------------|----------|
-| 🔴 **No convertir input()** | `input()` siempre devuelve string | Usar `int()`, `float()` para convertir |
-| 🔴 **División por cero** | Dividir entre 0 causa error | Verificar antes de dividir |
-| 🔴 **Nombres de variables** | Usar nombres no descriptivos | Usar nombres que expliquen el contenido |
-| 🔴 **Mayúsculas/minúsculas** | `Nombre` ≠ `nombre` | Ser consistente con la nomenclatura |
+| **No convertir input()** | `input()` siempre devuelve string | Usar `int()`, `float()` para convertir |
+| **División por cero** | Dividir entre 0 causa error | Verificar antes de dividir |
+| **Nombres de variables** | Usar nombres no descriptivos | Usar nombres que expliquen el contenido |
+| **Mayúsculas/minúsculas** | `Nombre` ≠ `nombre` | Ser consistente con la nomenclatura |
 
 ## ✅ Buenas Prácticas
 
