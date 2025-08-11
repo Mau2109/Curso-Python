@@ -1,5 +1,5 @@
 # 🐍 Curso de Python Básico
-<img src="../imagenes/python.jpg" alt="Logo de Python" width="300">
+<img src="./imagenes/python.jpg" alt="Logo de Python" width="300">
 
 ¡Hola! Soy **Mau** y te doy la bienvenida a este curso de Python.  
 Este curso fue hecho con **un toque de café ☕, unas cuantas horas con GPT 🤖 y mi sarcasmo natural 😏**.  

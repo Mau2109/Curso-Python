@@ -2,14 +2,15 @@
 
 <img src="../imagenes/python.jpg" alt="Logo de Python" width="300">
 ## 📖 ¿Qué es Python?
-Python es un lenguaje de programación **interpretado**, **de alto nivel** y con una **sintaxis tan sencilla** que hasta tu perro podría aprenderlo (si quisiera).  
+Python es un lenguaje de programación **interpretado**  **de alto nivel** y con una **sintaxis tan sencilla** que hasta tu primito podría aprenderlo (si quisiera)(no quiere creeme).
+
 Se usa para:
-- 🌐 Desarrollo web
-- 📊 Ciencia de datos
-- 🤖 Inteligencia artificial
-- ⚙️ Automatización de tareas
-- 🎮 Videojuegos
-- 🐢 Scripts para ahorrarte trabajo
+- Desarrollo web
+- Ciencia de datos
+- Inteligencia artificial
+- Automatización de tareas
+- Videojuegos
+- Scripts para ahorrarte trabajo
 
 ---
 
