@@ -715,7 +715,6 @@ while True:
     else:
         print("Opción no válida")
 ```
+</details>
 
----
-## Siguiente módulo
 [Siguiente módulo](../modulo4/README.md)
