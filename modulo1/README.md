@@ -92,7 +92,7 @@ print(mayor_de_edad)  # True (si edad es 25)
 
 ---
 
-## ⚡ Operadores Básicos
+## Operadores Básicos
 
 ### Operadores Aritméticos
 ```python
