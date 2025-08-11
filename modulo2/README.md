@@ -7,26 +7,26 @@
 
 ## 📖 Tabla de Contenidos
 
-1. [🔀 Condicionales](#-condicionales)
+1. [ Condicionales](#-condicionales)
    - [La sentencia if](#la-sentencia-if)
    - [La sentencia if-else](#la-sentencia-if-else)
    - [La sentencia elif](#la-sentencia-elif-else-if)
    - [Condicionales anidados](#condicionales-anidados)
    - [Operadores lógicos](#operadores-lógicos-en-condicionales)
-2. [🔄 Bucles](#-bucles)
+2. [ Bucles](#-bucles)
    - [Bucle for](#bucle-for)
    - [Bucle while](#bucle-while)
    - [Control de bucles](#control-de-bucles-break-y-continue)
    - [Bucles anidados](#bucles-anidados)
-3. [💻 Ejercicios Prácticos](#-ejercicios-prácticos)
-4. [📝 Conceptos Clave](#-conceptos-clave-para-recordar)
-5. [⚠️ Errores Comunes](#️-errores-comunes)
+3. [ Ejercicios Prácticos](#-ejercicios-prácticos)
+4. [ Conceptos Clave](#-conceptos-clave-para-recordar)
+5. [ Errores Comunes](#️-errores-comunes)
 
 ---
 
 ### 1. Condicionales
 
-## 🔀 Condicionales
+##  Condicionales
 
 Los condicionales nos permiten ejecutar código solo cuando se cumple una condición específica. Python usa **indentación** (espacios o tabs) para definir bloques de código.
 
@@ -43,7 +43,7 @@ if edad >= 18:
 print("Esta línea siempre se ejecuta")
 ```
 
-> **💡 Puntos importantes:**
+> **Puntos importantes:**
 > - Los dos puntos `:` son obligatorios
 > - La indentación (4 espacios recomendados) define el bloque
 > - Todo el código indentado se ejecuta si la condición es verdadera
@@ -119,7 +119,7 @@ if not edad < 18:  # Equivale a: if edad >= 18
     print("Eres mayor de edad")
 ```
 
-## 🔄 Bucles
+## Bucles
 
 Los bucles nos permiten repetir código múltiples veces.
 
@@ -267,7 +267,7 @@ for fila in range(5):
 ## 💻 Ejercicios Prácticos
 
 ### Ejercicio 1: Clasificador de Edad
-**Nivel:** 🟢 Principiante
+**Nivel:** Principiante
 
 Crea un programa que clasifique a una persona según su edad.
 
@@ -291,7 +291,7 @@ print(f"Según tu edad ({edad} años), eres: {categoria}")
 </details>
 
 ### Ejercicio 2: Calculadora de IMC
-**Nivel:** 🟡 Principiante-Intermedio
+**Nivel:** Principiante-Intermedio
 
 Crea un programa que calcule el IMC y determine el estado de peso.
 
@@ -320,7 +320,7 @@ print(f"Estado: {estado}")
 </details>
 
 ### Ejercicio 3: Juego de Adivinanza
-**Nivel:** 🟠 Intermedio
+**Nivel:** Intermedio
 
 Crea un juego donde el usuario debe adivinar un número.
 
@@ -356,7 +356,7 @@ else:
 </details>
 
 ### Ejercicio 4: Contador de Vocales
-**Nivel:** 🟠 Intermedio
+**Nivel:** Intermedio
 
 Cuenta las vocales en una palabra o frase.
 
@@ -384,7 +384,7 @@ for vocal, cantidad in detalle_vocales.items():
 </details>
 
 ### Ejercicio 5: Generador de Patrones
-**Nivel:** 🟠 Intermedio
+**Nivel:** Intermedio
 
 Crea diferentes patrones usando bucles anidados.
 
@@ -423,7 +423,7 @@ elif opcion == "3":
 </details>
 
 ### Ejercicio 6: Sistema de Login Simple
-**Nivel:** 🔴 Avanzado
+**Nivel:** Avanzado
 
 Sistema con múltiples intentos y usuarios.
 
@@ -486,14 +486,14 @@ while intentos < max_intentos:
 
 ## 📝 Conceptos Clave para Recordar
 
-### 🔀 Condicionales
+### Condicionales
 - **if**: Ejecuta código si la condición es verdadera
 - **elif**: Múltiples condiciones alternativas  
 - **else**: Se ejecuta si ninguna condición anterior es verdadera
 - **Indentación**: Define los bloques de código (4 espacios)
 - **Operadores lógicos**: `and`, `or`, `not`
 
-### 🔄 Bucles
+### Bucles
 - **for**: Itera sobre secuencias (range, strings, listas)
 - **while**: Se ejecuta mientras la condición sea verdadera
 - **range()**: Genera secuencias de números
@@ -505,11 +505,11 @@ while intentos < max_intentos:
 
 | Error | Descripción | Solución |
 |-------|-------------|----------|
-| 🔴 **Indentación incorrecta** | Python es muy estricto con la indentación | Usar 4 espacios consistentemente |
-| 🔴 **Bucles infinitos** | La condición del while nunca es falsa | Asegurar que la condición eventualmente cambie |
-| 🔴 **Comparación vs asignación** | Confundir `=` con `==` | Usar `==` para comparar, `=` para asignar |
-| 🔴 **Olvidar el break** | En bucles `while True` sin salida | Siempre incluir una condición de salida |
-| 🔴 **Rango incorrecto** | `range(5)` va de 0 a 4, no hasta 5 | Recordar que el límite superior es exclusivo |
+| **Indentación incorrecta** | Python es muy estricto con la indentación | Usar 4 espacios consistentemente |
+| **Bucles infinitos** | La condición del while nunca es falsa | Asegurar que la condición eventualmente cambie |
+| **Comparación vs asignación** | Confundir `=` con `==` | Usar `==` para comparar, `=` para asignar |
+| **Olvidar el break** | En bucles `while True` sin salida | Siempre incluir una condición de salida |
+| **Rango incorrecto** | `range(5)` va de 0 a 4, no hasta 5 | Recordar que el límite superior es exclusivo |
 
 ## ✅ Buenas Prácticas
 
@@ -520,15 +520,15 @@ while intentos < max_intentos:
 5. **Comenta código complejo** especialmente en bucles anidados
 
 
-## 📋 Resumen del Módulo
+## Resumen del Módulo
 
 En este módulo has aprendido:
 
-- ✅ Cómo usar condicionales para tomar decisiones
-- ✅ Diferentes tipos de bucles para repetir código
-- ✅ Control de flujo con `break` y `continue`
-- ✅ Creación de patrones con bucles anidados
-- ✅ Desarrollo de programas interactivos
+- Cómo usar condicionales para tomar decisiones
+- Diferentes tipos de bucles para repetir código
+- Control de flujo con `break` y `continue`
+- Creación de patrones con bucles anidados
+- Desarrollo de programas interactivos
 
 ## Errores Comunes
 
@@ -537,3 +537,4 @@ En este módulo has aprendido:
 3. **Comparación vs asignación**: Usar `==` para comparar, `=` para asignar
 4. **Olvidar el break**: En bucles while True, siempre incluir una condición de salida
 5. **Rango incorrecto**: Recordar que range(5) va de 0 a 4, no hasta 5
+

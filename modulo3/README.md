@@ -7,17 +7,17 @@
 
 ## 📖 Tabla de Contenidos
 
-1. [📋 Listas (Lists)](#-listas-lists)
-2. [📦 Tuplas (Tuples)](#-tuplas-tuples)
-3. [📖 Diccionarios (Dictionaries)](#-diccionarios-dictionaries)
-4. [🔄 Iteración sobre Estructuras](#-iteración-sobre-estructuras)
-5. [💻 Ejercicios Prácticos](#-ejercicios-prácticos)
-6. [📝 Conceptos Clave](#-conceptos-clave-para-recordar)
-7. [⚠️ Errores Comunes](#️-errores-comunes)
+1. [Listas (Lists)](#-listas-lists)
+2. [Tuplas (Tuples)](#-tuplas-tuples)
+3. [Diccionarios (Dictionaries)](#-diccionarios-dictionaries)
+4. [Iteración sobre Estructuras](#-iteración-sobre-estructuras)
+5. [Ejercicios Prácticos](#-ejercicios-prácticos)
+6. [Conceptos Clave](#-conceptos-clave-para-recordar)
+7. [Errores Comunes](#️-errores-comunes)
 
 ---
 
-## 📋 Listas (Lists)
+## Listas (Lists)
 
 Las listas son colecciones **ordenadas** y **modificables** de elementos. Pueden contener diferentes tipos de datos.
 
@@ -125,7 +125,7 @@ print(mayusculas)  # ['PYTHON', 'JAVA', 'JAVASCRIPT', 'C++']
 
 ---
 
-## 📦 Tuplas (Tuples)
+## Tuplas (Tuples)
 
 Las tuplas son colecciones **ordenadas** pero **inmutables** (no se pueden modificar después de crearlas).
 
@@ -208,7 +208,7 @@ ubicaciones = {
 
 ---
 
-## 📖 Diccionarios (Dictionaries)
+## Diccionarios (Dictionaries)
 
 Los diccionarios son colecciones **no ordenadas** de pares **clave-valor**. Son muy eficientes para búsquedas.
 
@@ -309,7 +309,7 @@ print(longitudes)  # {'python': 6, 'java': 4, 'javascript': 10}
 
 ---
 
-## 🔄 Iteración sobre Estructuras
+## Iteración sobre Estructuras
 
 ### Iteración sobre listas
 
@@ -362,10 +362,10 @@ for clave, valor in estudiante.items():
 
 ---
 
-## 💻 Ejercicios Prácticos
+## Ejercicios Prácticos
 
 ### Ejercicio 1: Gestión de Calificaciones
-**Nivel:** 🟢 Principiante
+**Nivel:** Principiante
 
 Crea un programa que maneje las calificaciones de un estudiante.
 
@@ -413,7 +413,7 @@ else:
 </details>
 
 ### Ejercicio 2: Agenda de Contactos
-**Nivel:** 🟡 Intermedio
+**Nivel:** Intermedio
 
 Crea una agenda de contactos usando diccionarios.
 
@@ -500,7 +500,7 @@ while True:
 </details>
 
 ### Ejercicio 3: Análisis de Texto
-**Nivel:** 🟡 Intermedio
+**Nivel:** Intermedio
 
 Analiza un texto y cuenta frecuencia de palabras.
 
@@ -568,7 +568,7 @@ else:
 </details>
 
 ### Ejercicio 4: Sistema de Inventario
-**Nivel:** 🟠 Intermedio-Avanzado
+**Nivel:** Intermedio-Avanzado
 
 Sistema para gestionar inventario de productos.
 
@@ -634,7 +634,7 @@ def actualizar_stock():
         print(f"Stock actualizado: {nuevo_stock}")
         
         if nuevo_stock <= producto['stock_minimo']:
-            print("⚠️  ALERTA: Stock por debajo del mínimo!")
+            print(" ALERTA: Stock por debajo del mínimo!")
             
     except ValueError:
         print("Error: Ingresa un número entero")
@@ -650,7 +650,7 @@ def buscar_producto():
         print(f"Precio: ${p['precio']:.2f}")
         print(f"Stock: {p['stock']}")
         print(f"Stock mínimo: {p['stock_minimo']}")
-        print(f"Estado: {'🔴 STOCK BAJO' if p['stock'] <= p['stock_minimo'] else '🟢 STOCK OK'}")
+        print(f"Estado: {'STOCK BAJO' if p['stock'] <= p['stock_minimo'] else '🟢 STOCK OK'}")
     else:
         print("Producto no encontrado")
 
@@ -682,7 +682,7 @@ def reporte_completo():
     
     print("\nDetalle por producto:")
     for codigo, datos in sorted(inventario.items()):
-        estado = "🔴 BAJO" if datos['stock'] <= datos['stock_minimo'] else "🟢 OK"
+        estado = " BAJO" if datos['stock'] <= datos['stock_minimo'] else "🟢 OK"
         valor = datos['precio'] * datos['stock']
         print(f"{codigo}: {datos['nombre']} | Stock: {datos['stock']} | Valor: ${valor:.2f} | {estado}")
 
@@ -718,7 +718,7 @@ while True:
 </details>
 
 ### Ejercicio 5: Juego de Palabras
-**Nivel:** 🟠 Intermedio-Avanzado
+**Nivel:** Intermedio-Avanzado
 
 Juego donde el usuario debe adivinar palabras con pistas.
 
@@ -775,7 +775,7 @@ def jugar_ronda():
         
         # Verificar si ganó
         if "_" not in progreso:
-            print(f"🎉 ¡FELICITACIONES! Adivinaste la palabra: {palabra.upper()}")
+            print(f" ¡FELICITACIONES! Adivinaste la palabra: {palabra.upper()}")
             return True
         
         # Mostrar estado
@@ -799,3 +799,6 @@ def jugar_ronda():
             if pistas_usadas <= len(palabras_db[palabra]):
                 mostrar_pistas(palabra, pistas_usadas)
 ```
+
+
+[Siguiente módulo](../modulo4/README.md)

@@ -5,21 +5,21 @@
 > 
 > En este módulo aprenderás a crear funciones para organizar tu código, evitar repetición y hacer programas más modulares y mantenibles.
 
-## 📖 Tabla de Contenidos
+## Tabla de Contenidos
 
-1. [🔧 Introducción a las Funciones](#-introducción-a-las-funciones)
-2. [📥 Parámetros y Argumentos](#-parámetros-y-argumentos)
-3. [📤 Valores de Retorno](#-valores-de-retorno)
-4. [🎯 Ámbito de Variables (Scope)](#-ámbito-de-variables-scope)
-5. [⭐ Funciones Avanzadas](#-funciones-avanzadas)
-6. [🔄 Funciones como Objetos](#-funciones-como-objetos)
-7. [💻 Ejercicios Prácticos](#-ejercicios-prácticos)
-8. [📝 Conceptos Clave](#-conceptos-clave-para-recordar)
-9. [⚠️ Errores Comunes](#️-errores-comunes)
+1. [Introducción a las Funciones](#-introducción-a-las-funciones)
+2. [Parámetros y Argumentos](#-parámetros-y-argumentos)
+3. [Valores de Retorno](#-valores-de-retorno)
+4. [Ámbito de Variables (Scope)](#-ámbito-de-variables-scope)
+5. [Funciones Avanzadas](#-funciones-avanzadas)
+6. [Funciones como Objetos](#-funciones-como-objetos)
+7. [Ejercicios Prácticos](#-ejercicios-prácticos)
+8. [Conceptos Clave](#-conceptos-clave-para-recordar)
+9. [Errores Comunes](#-errores-comunes)
 
 ---
 
-## 🔧 Introducción a las Funciones
+## Introducción a las Funciones
 
 Las funciones son bloques de código reutilizable que realizan una tarea específica. Ayudan a organizar el código y evitar repetición.
 
@@ -90,7 +90,7 @@ def restar():
 
 ---
 
-## 📥 Parámetros y Argumentos
+## Parámetros y Argumentos
 
 Los parámetros permiten que las funciones reciban datos para procesar.
 
@@ -184,7 +184,7 @@ funcion_completa("requerido", "nuevo_valor", 1, 2, 3, extra="dato", otro=True)
 
 ---
 
-## 📤 Valores de Retorno
+## Valores de Retorno
 
 Las funciones pueden devolver valores usando la palabra clave `return`.
 
@@ -251,82 +251,6 @@ chars, words, longest = analizar_texto("Python es un lenguaje fantástico")
 print(f"Caracteres: {chars}, Palabras: {words}, Más larga: {longest}")
 ```
 
-### Return temprano
-
-```python
-def validar_edad(edad):
-    """Valida si una edad es válida para votar"""
-    if edad < 0:
-        return "Error: La edad no puede ser negativa"
-    
-    if edad > 150:
-        return "Error: Edad demasiado alta"
-    
-    if edad < 18:
-        return "No puede votar, es menor de edad"
-    
-    return "Puede votar"
-
-def dividir_seguro(a, b):
-    """División segura que maneja división por cero"""
-    if b == 0:
-        return None, "Error: División por cero"
-    
-    return a / b, "Operación exitosa"
-
-# Usar return temprano
-print(validar_edad(25))  # Puede votar
-print(validar_edad(-5))  # Error: La edad no puede ser negativa
-print(validar_edad(16))  # No puede votar, es menor de edad
-
-resultado, mensaje = dividir_seguro(10, 2)
-print(f"Resultado: {resultado}, Mensaje: {mensaje}")
-
-resultado, mensaje = dividir_seguro(10, 0)
-print(f"Resultado: {resultado}, Mensaje: {mensaje}")
-```
-
----
-
-## 🎯 Ámbito de Variables (Scope)
-
-El ámbito determina dónde se pueden usar las variables.
-
-### Variables locales vs globales
-
-```python
-# Variable global
-contador_global = 0
-
-def incrementar_local():
-    """Función con variable local"""
-    contador_local = 0  # Variable local
-    contador_local += 1
-    print(f"Contador local: {contador_local}")
-    # contador_local se "destruye" al terminar la función
-
-def incrementar_global():
-    """Función que modifica variable global"""
-    global contador_global  # Necesario para modificar
-    contador_global += 1
-    print(f"Contador global: {contador_global}")
-
-def mostrar_ambos():
-    """Muestra acceso a variables de diferentes ámbitos"""
-    variable_local = "Solo existe aquí"
-    print(f"Local: {variable_local}")
-    print(f"Global: {contador_global}")  # Puede leer global sin 'global'
-
-# Demostración
-incrementar_local()  # Contador local: 1
-incrementar_local()  # Contador local: 1 (se reinicia)
-
-incrementar_global()  # Contador global: 1
-incrementar_global()  # Contador global: 2
-
-mostrar_ambos()
-print(f"Contador global fuera de funciones: {contador_global}")
-```
 
 ### Funciones anidadas y closures
 
@@ -363,150 +287,6 @@ print(por_5(4))   # 20
 ```
 
 ---
-
-## ⭐ Funciones Avanzadas
-
-### Funciones lambda
-
-```python
-# Función normal
-def cuadrado(x):
-    return x ** 2
-
-# Función lambda equivalente
-cuadrado_lambda = lambda x: x ** 2
-
-print(cuadrado(5))        # 25
-print(cuadrado_lambda(5)) # 25
-
-# Lambdas con múltiples parámetros
-suma = lambda a, b: a + b
-mayor = lambda x, y: x if x > y else y
-
-print(suma(3, 4))    # 7
-print(mayor(10, 8))  # 10
-
-# Uso común con funciones como map, filter, sort
-numeros = [1, 2, 3, 4, 5]
-
-# map: aplica función a cada elemento
-cuadrados = list(map(lambda x: x**2, numeros))
-print(cuadrados)  # [1, 4, 9, 16, 25]
-
-# filter: filtra elementos que cumplen condición
-pares = list(filter(lambda x: x % 2 == 0, numeros))
-print(pares)  # [2, 4]
-
-# sorted: ordena con función personalizada
-palabras = ["Python", "es", "fantástico", "para", "aprender"]
-por_longitud = sorted(palabras, key=lambda palabra: len(palabra))
-print(por_longitud)  # ['es', 'para', 'Python', 'aprender', 'fantástico']
-```
-
-### Decoradores básicos
-
-```python
-def medir_tiempo(func):
-    """Decorador que mide el tiempo de ejecución de una función"""
-    import time
-    
-    def wrapper(*args, **kwargs):
-        inicio = time.time()
-        resultado = func(*args, **kwargs)
-        fin = time.time()
-        print(f"{func.__name__} tardó {fin - inicio:.4f} segundos")
-        return resultado
-    
-    return wrapper
-
-def validar_positivo(func):
-    """Decorador que valida que los argumentos sean positivos"""
-    
-    def wrapper(*args, **kwargs):
-        for arg in args:
-            if isinstance(arg, (int, float)) and arg < 0:
-                raise ValueError("Los argumentos deben ser positivos")
-        resultado = func(*args, **kwargs)
-        return resultado
-    
-    return wrapper
-
-# Usar decoradores
-@medir_tiempo
-@validar_positivo
-def calcular_potencia(base, exponente):
-    """Calcula base elevado a exponente"""
-    return base ** exponente
-
-# La función está "decorada"
-resultado = calcular_potencia(2, 10)  # Valida y mide tiempo
-print(f"Resultado: {resultado}")
-```
-
-### Generadores
-
-```python
-def contador_simple():
-    """Generador que cuenta del 1 al 5"""
-    for i in range(1, 6):
-        yield i  # yield en lugar de return
-
-# Usar el generador
-gen = contador_simple()
-for numero in gen:
-    print(numero)
-
-def fibonacci(limite):
-    """Generador de números de Fibonacci"""
-    a, b = 0, 1
-    while a < limite:
-        yield a
-        a, b = b, a + b
-
-# Generar primeros números de Fibonacci menores a 100
-for fib in fibonacci(100):
-    print(fib, end=" ")
-print()
-
-# Generator expression (similar a list comprehension)
-cuadrados_gen = (x**2 for x in range(10))
-print(list(cuadrados_gen))  # [0, 1, 4, 9, 16, 25, 36, 49, 64, 81]
-```
-
----
-
-## 🔄 Funciones como Objetos
-
-En Python, las funciones son objetos de primera clase.
-
-### Asignar funciones a variables
-
-```python
-def saludar():
-    return "¡Hola!"
-
-def despedir():
-    return "¡Adiós!"
-
-# Asignar función a variable
-mi_funcion = saludar
-print(mi_funcion())  # ¡Hola!
-
-# Lista de funciones
-funciones = [saludar, despedir]
-for func in funciones:
-    print(func())
-
-# Diccionario de funciones
-operaciones = {
-    "suma": lambda x, y: x + y,
-    "resta": lambda x, y: x - y,
-    "multiplicacion": lambda x, y: x * y
-}
-
-print(operaciones["suma"](5, 3))  # 8
-```
-
 ### Pasar funciones como argumentos
 
 ```python
@@ -549,7 +329,7 @@ ejecutar_con_validacion(int, "abc")    # Error controlado
 ## 💻 Ejercicios Prácticos
 
 ### Ejercicio 1: Calculadora con Funciones
-**Nivel:** 🟢 Principiante
+**Nivel:** Principiante
 
 Crea una calculadora usando funciones para cada operación.
 
@@ -644,7 +424,7 @@ calculadora()
 </details>
 
 ### Ejercicio 2: Validador de Datos
-**Nivel:** 🟡 Intermedio
+**Nivel:** Intermedio
 
 Crea funciones para validar diferentes tipos de datos.
 
@@ -744,10 +524,10 @@ def solicitar_datos_validados():
             
             if valido:
                 datos[campo] = valor
-                print(f"✅ {mensaje_resultado}")
+                print(f"aceptado: {mensaje_resultado}")
                 break
             else:
-                print(f"❌ {mensaje_resultado}")
+                print(f"rechazado: {mensaje_resultado}")
                 print("Intenta de nuevo.\n")
     
     return datos
@@ -764,3 +544,5 @@ for campo, valor in datos_usuario.items():
         print(f"{campo.capitalize()}: {valor}")
 ```
 </details>
+
+[Siguiente módulo](../modulo5/README.md)

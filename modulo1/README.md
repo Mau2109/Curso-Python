@@ -317,3 +317,5 @@ print(f"Última letra: {frase[-1] if frase else 'No hay caracteres'}")
 3. **Comentar código**: Explicar partes complejas
 4. **Verificar tipos**: Usar `type()` para debugging
 5. **Validar entradas**: Asegurar que el usuario ingrese datos válidos
+
+[Siguiente módulo](../modulo2/README.md)
