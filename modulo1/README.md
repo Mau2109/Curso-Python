@@ -121,7 +121,7 @@ print(x <= y)  # True (menor o igual)
 print(x >= y)  # False (mayor o igual)
 ```
 
-### 🔗 Operadores Lógicos
+### Operadores Lógicos
 ```python
 # AND, OR, NOT
 a = True

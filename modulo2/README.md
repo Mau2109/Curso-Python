@@ -538,3 +538,4 @@ En este módulo has aprendido:
 4. **Olvidar el break**: En bucles while True, siempre incluir una condición de salida
 5. **Rango incorrecto**: Recordar que range(5) va de 0 a 4, no hasta 5
 
+[Siguiente módulo](../modulo3/README.md)
