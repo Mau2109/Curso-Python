@@ -14,8 +14,8 @@ La idea es que aprendas Python… o por lo menos te rías lo suficiente como par
 2. [Módulo 2: Estructuras de Control](./modulo2/README.md)
 3. [Módulo 3: Estructuras de Datos](./modulo3/README.md)
 4. [Módulo 4: Funciones y Modularidad](./modulo4/README.md)
-5. [Módulo 5: Manejo de Errores](./modulo5/README.md)
-6. [Módulo 6: Archivos y Persistencia de Datos](./modulo6/README.md)
+5. [Módulo 5: Manejo de Errores y archivos](./modulo5/README.md)
+6. [Módulo 6: Metodos integrados en Python](./modulo6/README.md)
 
 ---
 

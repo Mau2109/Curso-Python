@@ -1,4 +1,3 @@
-
 # 📚 Módulo 6: Métodos Integrados en Python
 
 > **Productividad y Buenas Prácticas con Tipos de Datos Comunes**
