@@ -60,7 +60,7 @@ Después se fue a **Dropbox** (2013-2019) y ahora está en **Microsoft** desde 2
 
 ---
 
-### **6. Python en el Espacio **
+### **6. Python en el Espacio**
 NASA usa Python para:
 - Controlar el **Telescopio Espacial Hubble**
 - Misiones a **Marte** (rovers)
