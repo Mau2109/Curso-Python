@@ -2,7 +2,7 @@
 <img src="./imagenes/python.jpg" alt="Logo de Python" width="300">
 
 ¡Hola! Soy **Mau** y te doy la bienvenida a este curso de Python.  
-Este curso fue hecho con **un toque de café ☕, unas cuantas horas con GPT 🤖 y mi sarcasmo natural 😏**.  
+Este curso fue hecho con **un toque de café, unas cuantas horas con GPT y mi sarcasmo natural JAJAJA**.  
 La idea es que aprendas Python… o por lo menos te rías lo suficiente como para justificar haber abierto este repositorio.
 
 ---
@@ -20,13 +20,13 @@ La idea es que aprendas Python… o por lo menos te rías lo suficiente como par
 7. [Modulo Final: Datos curiosos](./End/README.md)
 ---
 
-### 🚀 ¿Cómo usar este curso?
+### ¿Cómo usar este curso?
 
-- 📖 **Lee** cada módulo en orden (o no, pero después no me culpes si no entiendes nada).
-- 🖥️ **Ejecuta** los ejemplos por tu cuenta.
-- 📝 **Haz** los ejercicios… o mira las soluciones y finge que los hiciste.
-- ⚡ **Pregunta** lo que no entiendas (aunque probablemente Google ya lo sabe).
+- **Lee** cada módulo en orden (o no, pero después no me culpes si no entiendes nada).
+- **Ejecuta** los ejemplos por tu cuenta.
+- **Haz** los ejercicios… o mira las soluciones y finge que los hiciste.
+- **Pregunta** lo que no entiendas (aunque probablemente Google ya lo sabe).
 
 ---
 
-💡 *NOTA*: No me hago responsable si después de este curso terminas hablando con tu computadora o diciéndole "pythoncito" de cariño.
+*NOTA*: No me hago responsable si después de este curso terminas hablando con tu computadora o diciéndole "pythoncito" de cariño.
