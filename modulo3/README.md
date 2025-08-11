@@ -765,7 +765,7 @@ def jugar_ronda():
     max_intentos = 6
     pistas_usadas = 0
     
-    print(f"\n🎮 NUEVA PALABRA - {len(palabra)} letras")
+    print(f"\nNUEVA PALABRA - {len(palabra)} letras")
     print(f"Tienes {max_intentos} intentos fallidos permitidos")
     
     while True:
@@ -800,5 +800,5 @@ def jugar_ronda():
                 mostrar_pistas(palabra, pistas_usadas)
 ```
 
-
+---
 [Siguiente módulo](../modulo4/README.md)
