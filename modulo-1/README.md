@@ -1,6 +1,5 @@
 # 🐍 Introducción a Python
 
-![Logo de Python](../imagenes/python.jpg)
 <img src="../imagenes/python.jpg" alt="Logo de Python" width="300">
 ## 📖 ¿Qué es Python?
 Python es un lenguaje de programación **interpretado**, **de alto nivel** y con una **sintaxis tan sencilla** que hasta tu perro podría aprenderlo (si quisiera).  
