@@ -16,7 +16,8 @@ La idea es que aprendas Python… o por lo menos te rías lo suficiente como par
 4. [Módulo 4: Funciones y Modularidad](./modulo4/README.md)
 5. [Módulo 5: Manejo de Errores y archivos](./modulo5/README.md)
 6. [Módulo 6: Metodos integrados en Python](./modulo6/README.md)
-
+7. [Módulo 7: Interfaces Gráficas y Machine Learning](./modulo7/README.md)
+7. [Modulo Final: Datos curiosos](./End/README.md)
 ---
 
 ### 🚀 ¿Cómo usar este curso?
