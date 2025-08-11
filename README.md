@@ -8,12 +8,13 @@ La idea es que aprendas Python… o por lo menos te rías lo suficiente como par
 
 ## 📚 Módulos Disponibles
 
-1. [🐣 Módulo 1: Fundamentos de Python](./modulo1/README.md)
-2. [🛠️ Módulo 2: Estructuras de Control](./modulo2/README.md)
-3. [📦 Módulo 3: Estructuras de Datos](./modulo3/README.md)
-4. [🌀 Módulo 4: Funciones y Modularidad](./modulo4/README.md)
-5. [🚨 Módulo 5: Manejo de Errores](./modulo5/README.md)
-6. [📂 Módulo 6: Archivos y Persistencia de Datos](./modulo6/README.md)
+0. [Introduccion a Python](./modulo-1/README.md)
+1. [Módulo 1: Fundamentos de Python](./modulo1/README.md)
+2. [Módulo 2: Estructuras de Control](./modulo2/README.md)
+3. [Módulo 3: Estructuras de Datos](./modulo3/README.md)
+4. [Módulo 4: Funciones y Modularidad](./modulo4/README.md)
+5. [Módulo 5: Manejo de Errores](./modulo5/README.md)
+6. [Módulo 6: Archivos y Persistencia de Datos](./modulo6/README.md)
 
 ---
 
@@ -26,4 +27,4 @@ La idea es que aprendas Python… o por lo menos te rías lo suficiente como par
 
 ---
 
-💡 *Disclaimer*: No me hago responsable si después de este curso terminas hablando con tu computadora o diciéndole "pythoncito" de cariño.
+💡 *Disclaratoria*: No me hago responsable si después de este curso terminas hablando con tu computadora o diciéndole "pythoncito" de cariño.
